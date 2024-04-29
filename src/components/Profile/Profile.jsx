@@ -1,4 +1,4 @@
-export default function Profile({name, tag, location,image,stats }) {
+export default function Profile({ name, tag, location, image, stats: { followers,views,likes } }) {
     return <div>
         <div>
             <img
@@ -7,21 +7,21 @@ export default function Profile({name, tag, location,image,stats }) {
             />
             <p>{name}</p>
             <p>{tag}</p>
-            <p>{ location}</p>
+            <p>{location}</p>
         </div>
 
         <ul>
             <li>
-                <span>Followers</span>
-                <span>1000</span>
+                <span>Followers:</span>
+                <span>{followers}</span>
             </li>
             <li>
-                <span>Views</span>
-                <span>2000</span>
+                <span>Views:</span>
+                <span>{views}</span>
             </li>
             <li>
-                <span>Likes</span>
-                <span>3000</span>
+                <span>Likes:</span>
+                <span>{likes}</span>
             </li>
         </ul>
     </div>;
