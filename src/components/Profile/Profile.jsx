@@ -1,4 +1,5 @@
-export default function Profile({ name, tag, location, image, stats: { followers,views,likes } }) {
+import css from "./Profile.module.css"
+export default function Profile({ name, tag, location, image, stats: { followers, views, likes } }) {
     return <div>
         <div>
             <img
