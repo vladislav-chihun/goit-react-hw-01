@@ -1,13 +1,13 @@
-export default function Profile(props) {
+export default function Profile({name, tag, location,image,stats }) {
     return <div>
         <div>
             <img
-                src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+                src={image}
                 alt="User avatar"
             />
-            <p>Petra Marica</p>
-            <p>@pmarica</p>
-            <p>Salvador, Brasil</p>
+            <p>{name}</p>
+            <p>{tag}</p>
+            <p>{ location}</p>
         </div>
 
         <ul>
