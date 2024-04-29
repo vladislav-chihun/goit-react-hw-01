@@ -13,16 +13,16 @@ export default function Profile({ name, tag, location, image, stats: { followers
 
         <ul>
             <li>
-                <span>Followers:</span>
-                <span>{followers}</span>
+                <span>Followers</span>
+                <span className={css.stats}>{followers}</span>
             </li>
             <li>
-                <span>Views:</span>
-                <span>{views}</span>
+                <span>Views</span>
+                <span className={css.stats}>{views}</span>
             </li>
             <li>
-                <span>Likes:</span>
-                <span>{likes}</span>
+                <span>Likes</span>
+                <span className={css.stats}>{likes}</span>
             </li>
         </ul>
     </div>;
