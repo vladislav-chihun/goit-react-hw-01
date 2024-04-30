@@ -1,6 +1,7 @@
 import Profile from "./Profile/Profile";
 import userData from "./userData.json";
-import friendList from "./friends.json";
+import FriendList from "./friends.json";
+import friends from "./friends.json"
 export default function App() {
   return (
     <>

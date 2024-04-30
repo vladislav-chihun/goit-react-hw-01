@@ -1,9 +1,12 @@
-import css from "./FriendList.css"
-export default function FriendList(friends) {
+
+import FriendListItem from "./FriendListItem"
+
+export default function FriendList() {
     return <ul>
-	{/* Кількість li залежить від кількості об'єктів в масиві */}
+	{}
 	<li>
-		<FriendListItem />
+			<FriendListItem />
+			<p>Hi</p>
 	</li>
 </ul>
 
