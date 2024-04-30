@@ -8,8 +8,10 @@ export default function FriendListItem({
     return (
         <div className={css.friendCard}>   
             <img  src={avatar} alt="Avatar" width="48" />          
-            <p >{name}</p>
-        <p>{isOnline === true ? "Online" & {css.online}:"Offline"}</p>
+            <p className={css.friendName}>{name}</p>
+         <p className={clsx( { [css.online]: isOnline, [css.offline]: !isOnline })}>
+                {isOnline ? "Online" : "Offline"}
+            </p>
         </div>
     );
   }
