@@ -1,24 +1,19 @@
-export default function TransactionHistory({items}) {
-    return (<table>
+import css from "./TransactionHistory.module.css"
+export default function TransactionHistory({ items }) {
+    return (<table className={css.transactionsList}>
         <thead>
             <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                <th className={css.titleType}>Type</th>
+                <th className={css.titleAmount}>Amount</th>
+                <th className={css.titleCurrency}>Currency</th>
             </tr>
+            {items.map((item) => {
+                return <tr key={item.id}>
+                    <td className={css.paymentType}>{item.type}</td>
+                    <td className={css.paymentAmount}>{item.amount}</td>
+                    <td className={css.paymentCurrency}>{item.currency}</td>
+                </tr>
+            })}
         </thead>
-
-        <tbody>
-            <tr>
-                <td>Invoice</td>
-                <td>125</td>
-                <td>USD</td>
-            </tr>
-            <tr>
-                <td>Withdrawal</td>
-                <td>85</td>
-                <td>USD</td>
-            </tr>
-        </tbody>
     </table>);
 }

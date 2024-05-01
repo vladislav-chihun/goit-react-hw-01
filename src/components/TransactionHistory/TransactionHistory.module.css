@@ -1,0 +1,42 @@
+.transactionsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 434px;
+}
+.paymentType {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+.paymentAmount {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+.paymentCurrency {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+.titleType {
+  color: #fff;
+  background-color: black;
+  font-size: larger;
+  padding: 12px;
+}
+.titleAmount {
+  color: #fff;
+  background-color: black;
+  font-size: larger;
+  padding: 12px;
+}
+.titleCurrency {
+  color: #fff;
+  background-color: black;
+  font-size: larger;
+  padding: 12px;
+}
