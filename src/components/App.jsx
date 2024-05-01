@@ -19,7 +19,7 @@ export default function App (){
           stats={userData.stats}
         />
         <FriendList friends={friends} />
-        <TransactionHistory items={transactions} />
+        <TransactionHistory  />
       </>
     );
   };
