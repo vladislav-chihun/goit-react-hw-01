@@ -27,16 +27,24 @@
   background-color: black;
   font-size: larger;
   padding: 12px;
+  width: 141px;
 }
 .titleAmount {
   color: #fff;
   background-color: black;
   font-size: larger;
   padding: 12px;
+  width: 141px;
 }
 .titleCurrency {
   color: #fff;
   background-color: black;
   font-size: larger;
   padding: 12px;
+  width: 141px;
+}
+thead > tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
